@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="chat-token" content="__TOKEN__">
+  <title>Free AI Router</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Free AI Router</h1>
+    <p>대화가 OpenRouter와 선택된 제공업체로 전송됩니다. 기록은 이 화면에만 남습니다.</p>
+    <label for="provider">제공업체</label>
+    <select id="provider">
+      <option value="auto">자동 (Groq → OpenRouter)</option>
+      <option value="groq">Groq</option>
+      <option value="openrouter">OpenRouter</option>
+    </select>
+    <label for="model">무료 모델</label>
+    <select id="model"></select>
+    <small id="model-help">자동 전환 또는 제공업체 변경 시 이전 대화가 새 제공업체에 전송됩니다.</small>
+    <section id="messages" aria-live="polite" aria-label="대화"></section>
+    <form id="chat">
+      <label for="prompt">메시지</label>
+      <textarea id="prompt" rows="3" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+    <p id="status" role="status"></p>
+  </main>
+</body>
+</html>

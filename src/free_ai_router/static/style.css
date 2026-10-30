@@ -1,0 +1,9 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; }
+main { max-width: 48rem; margin: auto; padding: 1rem; }
+label, small { display: block; }
+input, select, textarea { box-sizing: border-box; width: 100%; padding: .6rem; font: inherit; }
+button { margin-top: .5rem; padding: .6rem 1.2rem; font: inherit; }
+#messages { margin: 1rem 0; }
+article { padding: .7rem; margin: .5rem 0; border: 1px solid #888; border-radius: .4rem; }
+article p { white-space: pre-wrap; overflow-wrap: anywhere; margin-bottom: 0; }
